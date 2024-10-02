@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisse Senedi Takip Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="chart.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hisse Senedi Takip Uygulaması</h1>
+        <div class="input-group">
+            <input type="text" id="stockCode" placeholder="Hisse Senedi Kodu Girin (ör: AAPL)">
+            <button id="fetchData">Verileri Getir</button>
+        </div>
+        <div id="result"></div>
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+</html>
